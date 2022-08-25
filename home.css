@@ -13,6 +13,8 @@ body {
 
 header {
    font-size: 1.5rem;
+   text-align: center;
+   padding: 10px;
 }
 
 header,
@@ -57,7 +59,7 @@ form button:hover {
 }
 
 .todo-list {
-   min-width: 30%;
+   min-width: 40%;
    list-style: none;
 }
 
@@ -142,4 +144,55 @@ select {
 .select:hover::after {
    background: white;
    color: #ff6f47;
+}
+
+@media screen and (max-width: 768px) {
+   .todo-container {
+      overflow-x: auto;
+      white-space: nowrap;
+   }
+
+   .todo-list {
+      min-width: 55%;
+   }
+}
+
+@media screen and (max-width: 680px) {
+   form {
+      flex-direction: column;
+   }
+
+   form > div {
+      margin-left: 7.5px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   form input {
+      width: 85%;
+   }
+}
+
+@media screen and (max-width: 360px) {
+   form input {
+      width: 82.5%;
+   }
+}
+
+@media screen and (max-width: 300px) {
+   form input {
+      width: 80%;
+   }
+}
+
+@media screen and (max-width: 260px) {
+   form input {
+      width: 77.5%;
+   }
+}
+
+@media screen and (max-width: 236px) {
+   form input {
+      width: 75%;
+   }
 }
